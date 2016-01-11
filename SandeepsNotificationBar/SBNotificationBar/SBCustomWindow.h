@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SandeepCustomWindow : UIWindow
+@interface SBCustomWindow : UIWindow
 
 @end

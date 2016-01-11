@@ -6,10 +6,10 @@
 //  Copyright © 2016 Sandeep Bhandari. All rights reserved.
 //
 
-#import "SandeepCustomWindow.h"
+#import "SBCustomWindow.h"
 #import "NotificationViewController.h"
 
-@implementation SandeepCustomWindow
+@implementation SBCustomWindow
 
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     if(CGRectContainsPoint(self.rootViewController.view.frame, point)){

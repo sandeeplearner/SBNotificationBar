@@ -7,11 +7,11 @@
 //
 
 #import "NotificationViewController.h"
-#import "SandeepCustomWindow.h"
+#import "SBCustomWindow.h"
 
 
 @interface NotificationViewController (){
-    SandeepCustomWindow *keyWindow;
+    SBCustomWindow *keyWindow;
     NSLayoutConstraint *yAxisConstraint;
     NSTimer *_timer;
 }
@@ -26,11 +26,11 @@
 -(id)init{
     self=[super init];
     
-    NSArray *subviewArray = [[NSBundle mainBundle] loadNibNamed:@"NotificationBarView" owner:self options:nil];
+    NSArray *subviewArray = [[NSBundle mainBundle] loadNibNamed:@"SBNotificationBarView" owner:self options:nil];
     UIView *mainView = [subviewArray objectAtIndex:0];
     self.view =  mainView;
     
-    keyWindow= [[SandeepCustomWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    keyWindow= [[SBCustomWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     keyWindow.windowLevel = UIWindowLevelAlert;
     keyWindow.rootViewController = self;
     [keyWindow makeKeyAndVisible];

@@ -32,7 +32,7 @@
 
 - (IBAction)showNotificationBar:(id)sender {
     NotificationViewController *notificationViewController = [NotificationViewController sharedManager];
-    notificationViewController.selectedHideAnimationType = CurlUp;
+    notificationViewController.selectedHideAnimationType = Default;
     [notificationViewController showAlertNotificationWithText:@"sandeep here testing abcd efgh ijkl mnop qrst uvw xyz 1234567890098765432112345678900987654321" andTitle:@"testing" andCompletionBlock:^{
         NSLog(@"User tapped notification bar");
     }];

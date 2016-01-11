@@ -15,9 +15,9 @@
 		B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F401C439217007216CF /* LaunchScreen.storyboard */; };
 		B6A05F4D1C439217007216CF /* SandeepsNotificationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F4C1C439217007216CF /* SandeepsNotificationBarTests.m */; };
 		B6A05F581C439217007216CF /* SandeepsNotificationBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */; };
-		B6A05F681C4392E4007216CF /* NotificationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F671C4392E4007216CF /* NotificationBarView.xib */; };
-		B6A05F6D1C4394DC007216CF /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F6C1C4394DC007216CF /* NotificationViewController.m */; };
-		B6A05F761C43C53A007216CF /* SandeepCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F751C43C53A007216CF /* SandeepCustomWindow.m */; };
+		B6A05F7E1C4401E2007216CF /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F7A1C4401E2007216CF /* NotificationViewController.m */; };
+		B6A05F7F1C4401E2007216CF /* SBCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */; };
+		B6A05F801C4401E2007216CF /* SBNotificationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +54,11 @@
 		B6A05F531C439217007216CF /* SandeepsNotificationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandeepsNotificationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandeepsNotificationBarUITests.m; sourceTree = "<group>"; };
 		B6A05F591C439217007216CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6A05F671C4392E4007216CF /* NotificationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationBarView.xib; sourceTree = "<group>"; };
-		B6A05F6B1C4394DC007216CF /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
-		B6A05F6C1C4394DC007216CF /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
-		B6A05F741C43C53A007216CF /* SandeepCustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandeepCustomWindow.h; sourceTree = "<group>"; };
-		B6A05F751C43C53A007216CF /* SandeepCustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandeepCustomWindow.m; sourceTree = "<group>"; };
+		B6A05F791C4401E2007216CF /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		B6A05F7A1C4401E2007216CF /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		B6A05F7B1C4401E2007216CF /* SBCustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCustomWindow.h; sourceTree = "<group>"; };
+		B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomWindow.m; sourceTree = "<group>"; };
+		B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBNotificationBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,7 @@
 		B6A05F311C439217007216CF /* SandeepsNotificationBar */ = {
 			isa = PBXGroup;
 			children = (
+				B6A05F781C4401E2007216CF /* SBNotificationBar */,
 				B6A05F351C439217007216CF /* AppDelegate.h */,
 				B6A05F361C439217007216CF /* AppDelegate.m */,
 				B6A05F381C439217007216CF /* ViewController.h */,
@@ -118,11 +119,6 @@
 				B6A05F401C439217007216CF /* LaunchScreen.storyboard */,
 				B6A05F431C439217007216CF /* Info.plist */,
 				B6A05F321C439217007216CF /* Supporting Files */,
-				B6A05F671C4392E4007216CF /* NotificationBarView.xib */,
-				B6A05F6B1C4394DC007216CF /* NotificationViewController.h */,
-				B6A05F6C1C4394DC007216CF /* NotificationViewController.m */,
-				B6A05F741C43C53A007216CF /* SandeepCustomWindow.h */,
-				B6A05F751C43C53A007216CF /* SandeepCustomWindow.m */,
 			);
 			path = SandeepsNotificationBar;
 			sourceTree = "<group>";
@@ -151,6 +147,18 @@
 				B6A05F591C439217007216CF /* Info.plist */,
 			);
 			path = SandeepsNotificationBarUITests;
+			sourceTree = "<group>";
+		};
+		B6A05F781C4401E2007216CF /* SBNotificationBar */ = {
+			isa = PBXGroup;
+			children = (
+				B6A05F791C4401E2007216CF /* NotificationViewController.h */,
+				B6A05F7A1C4401E2007216CF /* NotificationViewController.m */,
+				B6A05F7B1C4401E2007216CF /* SBCustomWindow.h */,
+				B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */,
+				B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */,
+			);
+			path = SBNotificationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +266,8 @@
 			files = (
 				B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */,
 				B6A05F3F1C439217007216CF /* Assets.xcassets in Resources */,
+				B6A05F801C4401E2007216CF /* SBNotificationBarView.xib in Resources */,
 				B6A05F3D1C439217007216CF /* Main.storyboard in Resources */,
-				B6A05F681C4392E4007216CF /* NotificationBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A05F3A1C439217007216CF /* ViewController.m in Sources */,
-				B6A05F6D1C4394DC007216CF /* NotificationViewController.m in Sources */,
+				B6A05F7E1C4401E2007216CF /* NotificationViewController.m in Sources */,
 				B6A05F371C439217007216CF /* AppDelegate.m in Sources */,
 				B6A05F341C439217007216CF /* main.m in Sources */,
-				B6A05F761C43C53A007216CF /* SandeepCustomWindow.m in Sources */,
+				B6A05F7F1C4401E2007216CF /* SBCustomWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
