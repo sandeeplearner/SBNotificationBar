@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6A05F341C439217007216CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F331C439217007216CF /* main.m */; };
+		B6A05F371C439217007216CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F361C439217007216CF /* AppDelegate.m */; };
+		B6A05F3A1C439217007216CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F391C439217007216CF /* ViewController.m */; };
+		B6A05F3D1C439217007216CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F3B1C439217007216CF /* Main.storyboard */; };
+		B6A05F3F1C439217007216CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F3E1C439217007216CF /* Assets.xcassets */; };
+		B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F401C439217007216CF /* LaunchScreen.storyboard */; };
+		B6A05F4D1C439217007216CF /* SandeepsNotificationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F4C1C439217007216CF /* SandeepsNotificationBarTests.m */; };
+		B6A05F581C439217007216CF /* SandeepsNotificationBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */; };
+		B6A05F681C4392E4007216CF /* NotificationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F671C4392E4007216CF /* NotificationBarView.xib */; };
+		B6A05F6D1C4394DC007216CF /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F6C1C4394DC007216CF /* NotificationViewController.m */; };
+		B6A05F761C43C53A007216CF /* SandeepCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F751C43C53A007216CF /* SandeepCustomWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6A05F491C439217007216CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A05F271C439217007216CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A05F2E1C439217007216CF;
+			remoteInfo = SandeepsNotificationBar;
+		};
+		B6A05F541C439217007216CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A05F271C439217007216CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A05F2E1C439217007216CF;
+			remoteInfo = SandeepsNotificationBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6A05F2F1C439217007216CF /* SandeepsNotificationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandeepsNotificationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A05F331C439217007216CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6A05F351C439217007216CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6A05F361C439217007216CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6A05F381C439217007216CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6A05F391C439217007216CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6A05F3C1C439217007216CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6A05F3E1C439217007216CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6A05F411C439217007216CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6A05F431C439217007216CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A05F481C439217007216CF /* SandeepsNotificationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandeepsNotificationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A05F4C1C439217007216CF /* SandeepsNotificationBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandeepsNotificationBarTests.m; sourceTree = "<group>"; };
+		B6A05F4E1C439217007216CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A05F531C439217007216CF /* SandeepsNotificationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandeepsNotificationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandeepsNotificationBarUITests.m; sourceTree = "<group>"; };
+		B6A05F591C439217007216CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A05F671C4392E4007216CF /* NotificationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationBarView.xib; sourceTree = "<group>"; };
+		B6A05F6B1C4394DC007216CF /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		B6A05F6C1C4394DC007216CF /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		B6A05F741C43C53A007216CF /* SandeepCustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandeepCustomWindow.h; sourceTree = "<group>"; };
+		B6A05F751C43C53A007216CF /* SandeepCustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandeepCustomWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6A05F2C1C439217007216CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F451C439217007216CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F501C439217007216CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6A05F261C439217007216CF = {
+			isa = PBXGroup;
+			children = (
+				B6A05F311C439217007216CF /* SandeepsNotificationBar */,
+				B6A05F4B1C439217007216CF /* SandeepsNotificationBarTests */,
+				B6A05F561C439217007216CF /* SandeepsNotificationBarUITests */,
+				B6A05F301C439217007216CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6A05F301C439217007216CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6A05F2F1C439217007216CF /* SandeepsNotificationBar.app */,
+				B6A05F481C439217007216CF /* SandeepsNotificationBarTests.xctest */,
+				B6A05F531C439217007216CF /* SandeepsNotificationBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6A05F311C439217007216CF /* SandeepsNotificationBar */ = {
+			isa = PBXGroup;
+			children = (
+				B6A05F351C439217007216CF /* AppDelegate.h */,
+				B6A05F361C439217007216CF /* AppDelegate.m */,
+				B6A05F381C439217007216CF /* ViewController.h */,
+				B6A05F391C439217007216CF /* ViewController.m */,
+				B6A05F3B1C439217007216CF /* Main.storyboard */,
+				B6A05F3E1C439217007216CF /* Assets.xcassets */,
+				B6A05F401C439217007216CF /* LaunchScreen.storyboard */,
+				B6A05F431C439217007216CF /* Info.plist */,
+				B6A05F321C439217007216CF /* Supporting Files */,
+				B6A05F671C4392E4007216CF /* NotificationBarView.xib */,
+				B6A05F6B1C4394DC007216CF /* NotificationViewController.h */,
+				B6A05F6C1C4394DC007216CF /* NotificationViewController.m */,
+				B6A05F741C43C53A007216CF /* SandeepCustomWindow.h */,
+				B6A05F751C43C53A007216CF /* SandeepCustomWindow.m */,
+			);
+			path = SandeepsNotificationBar;
+			sourceTree = "<group>";
+		};
+		B6A05F321C439217007216CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A05F331C439217007216CF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6A05F4B1C439217007216CF /* SandeepsNotificationBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6A05F4C1C439217007216CF /* SandeepsNotificationBarTests.m */,
+				B6A05F4E1C439217007216CF /* Info.plist */,
+			);
+			path = SandeepsNotificationBarTests;
+			sourceTree = "<group>";
+		};
+		B6A05F561C439217007216CF /* SandeepsNotificationBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */,
+				B6A05F591C439217007216CF /* Info.plist */,
+			);
+			path = SandeepsNotificationBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6A05F2E1C439217007216CF /* SandeepsNotificationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A05F5C1C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBar" */;
+			buildPhases = (
+				B6A05F2B1C439217007216CF /* Sources */,
+				B6A05F2C1C439217007216CF /* Frameworks */,
+				B6A05F2D1C439217007216CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandeepsNotificationBar;
+			productName = SandeepsNotificationBar;
+			productReference = B6A05F2F1C439217007216CF /* SandeepsNotificationBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6A05F471C439217007216CF /* SandeepsNotificationBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A05F5F1C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBarTests" */;
+			buildPhases = (
+				B6A05F441C439217007216CF /* Sources */,
+				B6A05F451C439217007216CF /* Frameworks */,
+				B6A05F461C439217007216CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6A05F4A1C439217007216CF /* PBXTargetDependency */,
+			);
+			name = SandeepsNotificationBarTests;
+			productName = SandeepsNotificationBarTests;
+			productReference = B6A05F481C439217007216CF /* SandeepsNotificationBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6A05F521C439217007216CF /* SandeepsNotificationBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A05F621C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBarUITests" */;
+			buildPhases = (
+				B6A05F4F1C439217007216CF /* Sources */,
+				B6A05F501C439217007216CF /* Frameworks */,
+				B6A05F511C439217007216CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6A05F551C439217007216CF /* PBXTargetDependency */,
+			);
+			name = SandeepsNotificationBarUITests;
+			productName = SandeepsNotificationBarUITests;
+			productReference = B6A05F531C439217007216CF /* SandeepsNotificationBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6A05F271C439217007216CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sandeep Bhandari";
+				TargetAttributes = {
+					B6A05F2E1C439217007216CF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B6A05F471C439217007216CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B6A05F2E1C439217007216CF;
+					};
+					B6A05F521C439217007216CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B6A05F2E1C439217007216CF;
+					};
+				};
+			};
+			buildConfigurationList = B6A05F2A1C439217007216CF /* Build configuration list for PBXProject "SandeepsNotificationBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6A05F261C439217007216CF;
+			productRefGroup = B6A05F301C439217007216CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6A05F2E1C439217007216CF /* SandeepsNotificationBar */,
+				B6A05F471C439217007216CF /* SandeepsNotificationBarTests */,
+				B6A05F521C439217007216CF /* SandeepsNotificationBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6A05F2D1C439217007216CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */,
+				B6A05F3F1C439217007216CF /* Assets.xcassets in Resources */,
+				B6A05F3D1C439217007216CF /* Main.storyboard in Resources */,
+				B6A05F681C4392E4007216CF /* NotificationBarView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F461C439217007216CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F511C439217007216CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6A05F2B1C439217007216CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A05F3A1C439217007216CF /* ViewController.m in Sources */,
+				B6A05F6D1C4394DC007216CF /* NotificationViewController.m in Sources */,
+				B6A05F371C439217007216CF /* AppDelegate.m in Sources */,
+				B6A05F341C439217007216CF /* main.m in Sources */,
+				B6A05F761C43C53A007216CF /* SandeepCustomWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F441C439217007216CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A05F4D1C439217007216CF /* SandeepsNotificationBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F4F1C439217007216CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A05F581C439217007216CF /* SandeepsNotificationBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6A05F4A1C439217007216CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A05F2E1C439217007216CF /* SandeepsNotificationBar */;
+			targetProxy = B6A05F491C439217007216CF /* PBXContainerItemProxy */;
+		};
+		B6A05F551C439217007216CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A05F2E1C439217007216CF /* SandeepsNotificationBar */;
+			targetProxy = B6A05F541C439217007216CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6A05F3B1C439217007216CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A05F3C1C439217007216CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6A05F401C439217007216CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A05F411C439217007216CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6A05F5A1C439217007216CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6A05F5B1C439217007216CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6A05F5D1C439217007216CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SandeepsNotificationBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6A05F5E1C439217007216CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SandeepsNotificationBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6A05F601C439217007216CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SandeepsNotificationBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandeepsNotificationBar.app/SandeepsNotificationBar";
+			};
+			name = Debug;
+		};
+		B6A05F611C439217007216CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SandeepsNotificationBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandeepsNotificationBar.app/SandeepsNotificationBar";
+			};
+			name = Release;
+		};
+		B6A05F631C439217007216CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SandeepsNotificationBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SandeepsNotificationBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B6A05F641C439217007216CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SandeepsNotificationBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SandeepsNotificationBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6A05F2A1C439217007216CF /* Build configuration list for PBXProject "SandeepsNotificationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A05F5A1C439217007216CF /* Debug */,
+				B6A05F5B1C439217007216CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A05F5C1C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A05F5D1C439217007216CF /* Debug */,
+				B6A05F5E1C439217007216CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6A05F5F1C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A05F601C439217007216CF /* Debug */,
+				B6A05F611C439217007216CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6A05F621C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A05F631C439217007216CF /* Debug */,
+				B6A05F641C439217007216CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6A05F271C439217007216CF /* Project object */;
+}
