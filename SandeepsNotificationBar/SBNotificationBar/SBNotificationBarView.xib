@@ -3,11 +3,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SBNotificationViewController">
             <connections>
                 <outlet property="cancelButton" destination="bNT-gT-Saf" id="lIj-QL-UQ2"/>
+                <outlet property="imageHeightConstraint" destination="d2B-jE-w3e" id="ZQq-CQ-iFd"/>
+                <outlet property="imageLeadingSpaceConstraint" destination="ZJf-aU-FUJ" id="zmI-EE-LAz"/>
+                <outlet property="notificationImageView" destination="KpT-KD-cKy" id="KWM-Ax-rYW"/>
                 <outlet property="notificationMessageBody" destination="dia-Ak-Iyn" id="Cuf-4B-no6"/>
                 <outlet property="notificationTitleLabel" destination="ofO-3f-Hnk" id="Hel-bm-SYq"/>
                 <outlet property="view" destination="xID-Yd-0wa" id="qpm-mq-jhO"/>
@@ -19,9 +23,9 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dia-Ak-Iyn">
-                    <rect key="frame" x="8" y="43" width="375" height="37"/>
+                    <rect key="frame" x="73" y="43" width="310" height="37"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-gT-Saf">
@@ -36,22 +40,31 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofO-3f-Hnk">
-                    <rect key="frame" x="8" y="14" width="375" height="21"/>
+                    <rect key="frame" x="73" y="14" width="310" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KpT-KD-cKy">
+                    <rect key="frame" x="8" y="11" width="57" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="KpT-KD-cKy" secondAttribute="height" multiplier="19:22" id="aRy-q9-zve"/>
+                        <constraint firstAttribute="height" constant="66" id="d2B-jE-w3e"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="dia-Ak-Iyn" firstAttribute="leading" secondItem="ofO-3f-Hnk" secondAttribute="leading" id="2LE-Yl-XRc"/>
                 <constraint firstAttribute="bottom" secondItem="dia-Ak-Iyn" secondAttribute="bottom" constant="8" id="76N-jf-Wal"/>
                 <constraint firstItem="ofO-3f-Hnk" firstAttribute="trailing" secondItem="dia-Ak-Iyn" secondAttribute="trailing" id="Chd-JP-nfB"/>
                 <constraint firstItem="bNT-gT-Saf" firstAttribute="centerY" secondItem="xID-Yd-0wa" secondAttribute="centerY" id="G71-BD-3ov"/>
-                <constraint firstItem="ofO-3f-Hnk" firstAttribute="leading" secondItem="xID-Yd-0wa" secondAttribute="leading" constant="8" id="Iwz-fs-ldU"/>
+                <constraint firstItem="dia-Ak-Iyn" firstAttribute="leading" secondItem="ofO-3f-Hnk" secondAttribute="leading" id="H47-da-rcs"/>
+                <constraint firstItem="ofO-3f-Hnk" firstAttribute="leading" secondItem="KpT-KD-cKy" secondAttribute="trailing" constant="8" id="Ie6-GO-eZh"/>
                 <constraint firstItem="dia-Ak-Iyn" firstAttribute="top" secondItem="ofO-3f-Hnk" secondAttribute="bottom" constant="8" id="LXo-rY-zAv"/>
                 <constraint firstItem="ofO-3f-Hnk" firstAttribute="centerY" secondItem="xID-Yd-0wa" secondAttribute="centerY" constant="-20" id="OBJ-hn-0Ge"/>
                 <constraint firstItem="bNT-gT-Saf" firstAttribute="leading" secondItem="dia-Ak-Iyn" secondAttribute="trailing" constant="8" id="YQx-ug-kDT"/>
+                <constraint firstItem="KpT-KD-cKy" firstAttribute="leading" secondItem="xID-Yd-0wa" secondAttribute="leading" constant="8" id="ZJf-aU-FUJ"/>
                 <constraint firstAttribute="trailing" secondItem="bNT-gT-Saf" secondAttribute="trailing" constant="8" id="u5H-aO-3cq"/>
+                <constraint firstItem="KpT-KD-cKy" firstAttribute="centerY" secondItem="xID-Yd-0wa" secondAttribute="centerY" id="urd-9B-5Xz"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

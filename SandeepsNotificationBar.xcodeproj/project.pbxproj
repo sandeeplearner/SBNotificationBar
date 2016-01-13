@@ -15,9 +15,10 @@
 		B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F401C439217007216CF /* LaunchScreen.storyboard */; };
 		B6A05F4D1C439217007216CF /* SandeepsNotificationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F4C1C439217007216CF /* SandeepsNotificationBarTests.m */; };
 		B6A05F581C439217007216CF /* SandeepsNotificationBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */; };
-		B6A05F7E1C4401E2007216CF /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F7A1C4401E2007216CF /* NotificationViewController.m */; };
+		B6A05F7E1C4401E2007216CF /* SBNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F7A1C4401E2007216CF /* SBNotificationViewController.m */; };
 		B6A05F7F1C4401E2007216CF /* SBCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */; };
 		B6A05F801C4401E2007216CF /* SBNotificationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */; };
+		B6C850E71C462C5C00DB567F /* tom.gif in Resources */ = {isa = PBXBuildFile; fileRef = B6C850E61C462C5C00DB567F /* tom.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +55,12 @@
 		B6A05F531C439217007216CF /* SandeepsNotificationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandeepsNotificationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A05F571C439217007216CF /* SandeepsNotificationBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandeepsNotificationBarUITests.m; sourceTree = "<group>"; };
 		B6A05F591C439217007216CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6A05F791C4401E2007216CF /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
-		B6A05F7A1C4401E2007216CF /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		B6A05F791C4401E2007216CF /* SBNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNotificationViewController.h; sourceTree = "<group>"; };
+		B6A05F7A1C4401E2007216CF /* SBNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBNotificationViewController.m; sourceTree = "<group>"; };
 		B6A05F7B1C4401E2007216CF /* SBCustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCustomWindow.h; sourceTree = "<group>"; };
 		B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomWindow.m; sourceTree = "<group>"; };
 		B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBNotificationBarView.xib; sourceTree = "<group>"; };
+		B6C850E61C462C5C00DB567F /* tom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tom.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		B6A05F311C439217007216CF /* SandeepsNotificationBar */ = {
 			isa = PBXGroup;
 			children = (
+				B6C850E61C462C5C00DB567F /* tom.gif */,
 				B6A05F781C4401E2007216CF /* SBNotificationBar */,
 				B6A05F351C439217007216CF /* AppDelegate.h */,
 				B6A05F361C439217007216CF /* AppDelegate.m */,
@@ -152,8 +155,8 @@
 		B6A05F781C4401E2007216CF /* SBNotificationBar */ = {
 			isa = PBXGroup;
 			children = (
-				B6A05F791C4401E2007216CF /* NotificationViewController.h */,
-				B6A05F7A1C4401E2007216CF /* NotificationViewController.m */,
+				B6A05F791C4401E2007216CF /* SBNotificationViewController.h */,
+				B6A05F7A1C4401E2007216CF /* SBNotificationViewController.m */,
 				B6A05F7B1C4401E2007216CF /* SBCustomWindow.h */,
 				B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */,
 				B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */,
@@ -267,6 +270,7 @@
 				B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */,
 				B6A05F3F1C439217007216CF /* Assets.xcassets in Resources */,
 				B6A05F801C4401E2007216CF /* SBNotificationBarView.xib in Resources */,
+				B6C850E71C462C5C00DB567F /* tom.gif in Resources */,
 				B6A05F3D1C439217007216CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A05F3A1C439217007216CF /* ViewController.m in Sources */,
-				B6A05F7E1C4401E2007216CF /* NotificationViewController.m in Sources */,
+				B6A05F7E1C4401E2007216CF /* SBNotificationViewController.m in Sources */,
 				B6A05F371C439217007216CF /* AppDelegate.m in Sources */,
 				B6A05F341C439217007216CF /* main.m in Sources */,
 				B6A05F7F1C4401E2007216CF /* SBCustomWindow.m in Sources */,
@@ -522,6 +526,7 @@
 				B6A05F5E1C439217007216CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6A05F5F1C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBarTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				B6A05F611C439217007216CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6A05F621C439217007216CF /* Build configuration list for PBXNativeTarget "SandeepsNotificationBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +544,7 @@
 				B6A05F641C439217007216CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

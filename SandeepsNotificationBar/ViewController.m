@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NotificationViewController.h"
+#import "SBNotificationBar/SBNotificationViewController.h"
 
 @interface ViewController (){
     
@@ -31,9 +31,11 @@
 }
 
 - (IBAction)showNotificationBar:(id)sender {
-    NotificationViewController *notificationViewController = [NotificationViewController sharedManager];
-    notificationViewController.selectedHideAnimationType = Default;
-    [notificationViewController showAlertNotificationWithText:@"sandeep here testing abcd efgh ijkl mnop qrst uvw xyz 1234567890098765432112345678900987654321" andTitle:@"testing" andCompletionBlock:^{
+    SBNotificationViewController *notificationViewController = [SBNotificationViewController sharedManager];
+    notificationViewController.isAutomaticDismissAllowed = NO;
+    notificationViewController.durationOfMessageDisplayBeforeAutomaticDismissal = 5.0;
+    
+    [notificationViewController showAlertNotificationWithText:@"sandeep here testing abcd efgh ijkl mnop qrst uvw xyz 1234567890098765432112345678900987654321" andTitle:@"testing" andNotificationImage:[UIImage imageNamed:@"tom.gif"] andCompletionBlock:^{
         NSLog(@"User tapped notification bar");
     }];
 }

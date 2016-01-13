@@ -6,11 +6,11 @@
 //  Copyright © 2016 Sandeep Bhandari. All rights reserved.
 //
 
-#import "NotificationViewController.h"
+#import "SBNotificationViewController.h"
 #import "SBCustomWindow.h"
 
 
-@interface NotificationViewController (){
+@interface SBNotificationViewController (){
     SBCustomWindow *keyWindow;
     NSLayoutConstraint *yAxisConstraint;
     NSTimer *_timer;
@@ -19,9 +19,12 @@
 @property (strong, nonatomic) IBOutlet UILabel *notificationMessageBody;
 @property (strong, nonatomic) IBOutlet UIButton *cancelButton;
 @property (nonatomic, copy) callback completionBlock;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *imageLeadingSpaceConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
+@property (strong, nonatomic) IBOutlet UIImageView *notificationImageView;
 @end
 
-@implementation NotificationViewController
+@implementation SBNotificationViewController
 
 -(id)init{
     self=[super init];
@@ -50,13 +53,17 @@
     self.selectedHideAnimationType = Default;
     self.durationOfMessageDisplayBeforeAutomaticDismissal = 3.0;
     self.backgroundColorOfNotificationBar = [UIColor colorWithRed:0 green:122.0/255.0 blue:255.0/255.0 alpha:1.0];
+    self.notificationBarDisplayAndHideAnimationDuration = 0.5;
     
+    self.imageLeadingSpaceConstraint.constant =0;
+    self.imageHeightConstraint.constant = 0;
+    [self.view layoutIfNeeded];
     [self.view setBackgroundColor:self.backgroundColorOfNotificationBar];
     return self;
 }
 
 + (id)sharedManager {
-    static NotificationViewController *sharedMyManager = nil;
+    static SBNotificationViewController *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
@@ -74,14 +81,20 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)showAlertNotificationWithText:(NSString *)notificationText andTitle:(NSString *)notificationTitle andCompletionBlock:(callback)completionBlock{
+-(void)showAlertNotificationWithText:(NSString *)notificationText andTitle:(NSString *)notificationTitle andNotificationImage:(UIImage *)notificationImage andCompletionBlock:(callback)completionBlock{
     yAxisConstraint.constant =-88;
     [keyWindow layoutIfNeeded];
     [self.notificationTitleLabel setText:notificationTitle];
     [self.notificationMessageBody setText:notificationText];
     self.completionBlock = completionBlock;
     
-    [UIView animateWithDuration:0.5 animations:^{
+    if(notificationImage){
+        [self.imageLeadingSpaceConstraint setConstant:8];
+        [self.imageHeightConstraint setConstant:66];
+        [self.notificationImageView setImage:notificationImage];
+    }
+    
+    [UIView animateWithDuration:self.notificationBarDisplayAndHideAnimationDuration animations:^{
         yAxisConstraint.constant =0;
         [keyWindow layoutIfNeeded];
     }];
@@ -108,7 +121,7 @@
 
 -(void)hideAlertNotification{
     if(self.selectedHideAnimationType == Default){
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:self.notificationBarDisplayAndHideAnimationDuration animations:^{
             yAxisConstraint.constant = -88;
             [keyWindow layoutIfNeeded];
         }];
@@ -138,7 +151,7 @@
                 break;
         }
         [UIView transitionWithView:keyWindow.rootViewController.view
-                          duration:0.5
+                          duration:self.notificationBarDisplayAndHideAnimationDuration
                            options:selectedOption
                         animations:^{
                             [keyWindow.rootViewController.view setHidden:YES];

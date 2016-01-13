@@ -7,13 +7,13 @@
 //
 
 #import "SBCustomWindow.h"
-#import "NotificationViewController.h"
+#import "SBNotificationViewController.h"
 
 @implementation SBCustomWindow
 
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     if(CGRectContainsPoint(self.rootViewController.view.frame, point)){
-        [(NotificationViewController *)self.rootViewController checkIfNotificationBarTappedWithPoint:point andEvent:event];
+        [(SBNotificationViewController *)self.rootViewController checkIfNotificationBarTappedWithPoint:point andEvent:event];
         return true;
     }
     else{
