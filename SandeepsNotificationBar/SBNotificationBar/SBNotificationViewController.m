@@ -8,7 +8,7 @@
 
 #import "SBNotificationViewController.h"
 #import "SBCustomWindow.h"
-
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface SBNotificationViewController (){
     SBCustomWindow *keyWindow;
@@ -54,11 +54,11 @@
     self.durationOfMessageDisplayBeforeAutomaticDismissal = 3.0;
     self.backgroundColorOfNotificationBar = [UIColor colorWithRed:0 green:122.0/255.0 blue:255.0/255.0 alpha:1.0];
     self.notificationBarDisplayAndHideAnimationDuration = 0.5;
-    
+    self.shouldPlaySound = NO;
+    self.notificationSound = new_mail;
     self.imageLeadingSpaceConstraint.constant =0;
     self.imageHeightConstraint.constant = 0;
     [self.view layoutIfNeeded];
-    [self.view setBackgroundColor:self.backgroundColorOfNotificationBar];
     return self;
 }
 
@@ -81,13 +81,13 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)showAlertNotificationWithText:(NSString *)notificationText andTitle:(NSString *)notificationTitle andNotificationImage:(UIImage *)notificationImage andCompletionBlock:(callback)completionBlock{
+-(void)showAlertNotificationWithText:(NSString *)notificationText andTitle:(NSString *)notificationTitle andNotificationImage:(UIImage *)notificationImage withCallback:(callback)callback{
     yAxisConstraint.constant =-88;
     [keyWindow layoutIfNeeded];
     [self.notificationTitleLabel setText:notificationTitle];
     [self.notificationMessageBody setText:notificationText];
-    self.completionBlock = completionBlock;
-    
+    self.completionBlock = callback;
+    [self.view setBackgroundColor:self.backgroundColorOfNotificationBar];
     if(notificationImage){
         [self.imageLeadingSpaceConstraint setConstant:8];
         [self.imageHeightConstraint setConstant:66];
@@ -99,6 +99,9 @@
         [keyWindow layoutIfNeeded];
     }];
     
+    if(self.shouldPlaySound){
+        AudioServicesPlaySystemSound(self.notificationSound);
+    }
     if(self.isAutomaticDismissAllowed){
         [self startDismissalTimer];
     }

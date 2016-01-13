@@ -19,6 +19,9 @@
 		B6A05F7F1C4401E2007216CF /* SBCustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */; };
 		B6A05F801C4401E2007216CF /* SBNotificationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */; };
 		B6C850E71C462C5C00DB567F /* tom.gif in Resources */ = {isa = PBXBuildFile; fileRef = B6C850E61C462C5C00DB567F /* tom.gif */; };
+		B6C850ED1C466CC900DB567F /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C850EA1C466CC900DB567F /* close.png */; };
+		B6C850EE1C466CC900DB567F /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C850EB1C466CC900DB567F /* close@2x.png */; };
+		B6C850EF1C466CC900DB567F /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C850EC1C466CC900DB567F /* close@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		B6A05F7C1C4401E2007216CF /* SBCustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomWindow.m; sourceTree = "<group>"; };
 		B6A05F7D1C4401E2007216CF /* SBNotificationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBNotificationBarView.xib; sourceTree = "<group>"; };
 		B6C850E61C462C5C00DB567F /* tom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tom.gif; sourceTree = "<group>"; };
+		B6C850EA1C466CC900DB567F /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		B6C850EB1C466CC900DB567F /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		B6C850EC1C466CC900DB567F /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,9 @@
 		B6A05F781C4401E2007216CF /* SBNotificationBar */ = {
 			isa = PBXGroup;
 			children = (
+				B6C850EA1C466CC900DB567F /* close.png */,
+				B6C850EB1C466CC900DB567F /* close@2x.png */,
+				B6C850EC1C466CC900DB567F /* close@3x.png */,
 				B6A05F791C4401E2007216CF /* SBNotificationViewController.h */,
 				B6A05F7A1C4401E2007216CF /* SBNotificationViewController.m */,
 				B6A05F7B1C4401E2007216CF /* SBCustomWindow.h */,
@@ -267,6 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C850EF1C466CC900DB567F /* close@3x.png in Resources */,
+				B6C850ED1C466CC900DB567F /* close.png in Resources */,
+				B6C850EE1C466CC900DB567F /* close@2x.png in Resources */,
 				B6A05F421C439217007216CF /* LaunchScreen.storyboard in Resources */,
 				B6A05F3F1C439217007216CF /* Assets.xcassets in Resources */,
 				B6A05F801C4401E2007216CF /* SBNotificationBarView.xib in Resources */,
@@ -442,8 +454,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SandeepsNotificationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.talq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,8 +466,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SandeepsNotificationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.SandeepsNotificationBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosoftnet.talq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

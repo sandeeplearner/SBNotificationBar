@@ -32,10 +32,10 @@
 
 - (IBAction)showNotificationBar:(id)sender {
     SBNotificationViewController *notificationViewController = [SBNotificationViewController sharedManager];
-    notificationViewController.isAutomaticDismissAllowed = NO;
-    notificationViewController.durationOfMessageDisplayBeforeAutomaticDismissal = 5.0;
-    
-    [notificationViewController showAlertNotificationWithText:@"sandeep here testing abcd efgh ijkl mnop qrst uvw xyz 1234567890098765432112345678900987654321" andTitle:@"testing" andNotificationImage:[UIImage imageNamed:@"tom.gif"] andCompletionBlock:^{
+    notificationViewController.shouldPlaySound = YES;
+    notificationViewController.notificationSound = sms_received4;
+    notificationViewController.backgroundColorOfNotificationBar = [UIColor colorWithRed:0.8 green:0.9 blue:1.0 alpha:1.0];
+    [notificationViewController showAlertNotificationWithText:@"sandeep here testing abcd efgh ijkl mnop qrst uvw xyz 1234567890098765432112345678900987654321" andTitle:@"testing" andNotificationImage:[UIImage imageNamed:@"tom.gif"] withCallback:^{
         NSLog(@"User tapped notification bar");
     }];
 }
